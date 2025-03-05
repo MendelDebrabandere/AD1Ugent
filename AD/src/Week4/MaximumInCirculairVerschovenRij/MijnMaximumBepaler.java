@@ -25,7 +25,6 @@ public class MijnMaximumBepaler implements MaximumBepaler{
 
 
 
-
         else return rij[rij.length-1]; // k = 0, staat mooi gesorteerd
 
     }
