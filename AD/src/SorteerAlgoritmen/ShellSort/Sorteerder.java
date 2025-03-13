@@ -1,3 +1,4 @@
+package SorteerAlgoritmen.ShellSort;
 
 public interface Sorteerder {
 

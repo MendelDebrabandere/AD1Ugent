@@ -1,3 +1,5 @@
+package SorteerAlgoritmen.SortingDishes;
+
 import java.util.List;
 
 public interface TripleSorter {

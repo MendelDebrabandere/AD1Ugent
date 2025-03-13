@@ -1,7 +1,8 @@
+package SorteerAlgoritmen.ShellSort;
+
 import org.junit.Assert;
 import org.junit.Test;
 
-import javax.sound.midi.Sequence;
 import java.util.Arrays;
 
 public class SimpleTest {

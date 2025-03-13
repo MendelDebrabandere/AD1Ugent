@@ -1,3 +1,5 @@
+package SorteerAlgoritmen.SortingDishes;
+
 public interface Evaluator {
 
     /*
