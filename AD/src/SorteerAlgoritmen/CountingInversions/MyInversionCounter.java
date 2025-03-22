@@ -1,58 +1,43 @@
 package SorteerAlgoritmen.CountingInversions;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public class MyInversionCounter implements InversionCounter{
+public class MyInversionCounter implements InversionCounter {
 
     private int inversions = 0;
 
     @Override
     public int countInversions(int[] rij) {
-
-        ArrayList<Integer> list = new ArrayList<Integer>();
-        for (int e : rij) {
-            list.add(e);
-        }
-
-        mergeSort(list);
-
-
+        inversions = 0;
+        mergeSort(rij);
         return inversions;
     }
 
-    public List<Integer> mergeSort(List<Integer> list) {
+    private void mergeSort(int[] list) {
+        if (list.length <= 1) return;
 
-        // base case
-        if (list.size() == 1) return list;
+        // Split into left and right subarrays
+        int mid = list.length / 2;
+        int[] left = new int[mid];
+        int[] right = new int[list.length - mid];
+        System.arraycopy(list, 0, left, 0, mid);
+        System.arraycopy(list, mid, right, 0, list.length - mid);
 
-        // sort 2 sublists
-        List<Integer> list1 = mergeSort(list.subList(0, list.size()/2));
-        List<Integer> list2 = mergeSort(list.subList(list.size()/2,list.size()));
+        // Recursively sort subarrays
+        mergeSort(left);
+        mergeSort(right);
 
-        // merge
-        List<Integer> sorted = new ArrayList<Integer>();
-
-        while (!list1.isEmpty() || !list2.isEmpty()) {
-
-            if (list1.isEmpty()) {
-                sorted.add(list2.removeFirst());
-                inversions += list2.size();
-            } else if (list2.isEmpty()) {
-                sorted.add(list1.removeFirst());
-            } else if (list1.getFirst() <= list2.getFirst()) {
-                sorted.add(list1.removeFirst());
-            } else if (list1.getFirst() > list2.getFirst()) {
-                sorted.add(list2.removeFirst());
-                inversions += list2.size();
+        // Merge and count inversions
+        int i = 0, j = 0, k = 0;
+        while (i < left.length && j < right.length) {
+            if (left[i] <= right[j]) {
+                list[k++] = left[i++];
+            } else {
+                list[k++] = right[j++];
+                inversions += left.length - i;
             }
-
         }
 
-
-        return sorted;
-
+        // Copy remaining elements
+        while (i < left.length) list[k++] = left[i++];
+        while (j < right.length) list[k++] = right[j++];
     }
-
-
 }
