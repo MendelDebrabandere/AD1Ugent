@@ -1,4 +1,4 @@
-package RecursieDivConc1.Meerderheidselement;
+package RecursieDivConc.Meerderheidselement;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -10,7 +10,7 @@ public class SimpleTest {
     @Test
     public void testMajority() {
 
-        Sequence numbers = new Sequence(new int[]{3, 3, 4, 2, 4, 4, 2, 4, 4});
+        Sequence numbers = new Sequence(3, 3, 4, 2, 4, 4, 2, 4, 4);
 
         Assert.assertEquals(
                 "Incorrect majority element for input: " + numbers + ".",
@@ -22,7 +22,7 @@ public class SimpleTest {
     @Test
     public void testNoMajority() {
 
-        Sequence numbers = new Sequence(new int[]{3, 3, 4, 2, 4, 4, 2, 4});
+        Sequence numbers = new Sequence(3, 3, 4, 2, 4, 4, 2, 4);
 
         Assert.assertEquals(
                 "Incorrect majority element for input: " + numbers + ".",

@@ -1,4 +1,4 @@
-package RecursieDivConc1.MaximumInCirculairVerschovenRij;
+package RecursieDivConc.MaximumInCirculairVerschovenRij;
 
 import org.junit.Assert;
 import org.junit.BeforeClass;

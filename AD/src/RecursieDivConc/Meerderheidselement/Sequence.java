@@ -1,4 +1,4 @@
-package RecursieDivConc1.Meerderheidselement;
+package RecursieDivConc.Meerderheidselement;
 
 import java.util.Arrays;
 
