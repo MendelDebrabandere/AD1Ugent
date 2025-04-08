@@ -1,4 +1,4 @@
-package SorteerAlgoritmen.SortingDishes;
+package Sorteer.SortingDishes;
 
 import java.util.LinkedList;
 import java.util.List;

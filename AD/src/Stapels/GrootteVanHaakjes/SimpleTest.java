@@ -1,4 +1,4 @@
-package StapelsWachtlijnPrioriteitswachtlijnen.GrootteVanHaakjes;
+package Stapels.GrootteVanHaakjes;
 
 import org.junit.Test;
 import org.junit.Assert;

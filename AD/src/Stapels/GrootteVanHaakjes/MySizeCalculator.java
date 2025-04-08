@@ -1,4 +1,4 @@
-package StapelsWachtlijnPrioriteitswachtlijnen.GrootteVanHaakjes;
+package Stapels.GrootteVanHaakjes;
 
 import java.util.EmptyStackException;
 import java.util.Stack;

@@ -1,4 +1,4 @@
-package SorteerAlgoritmen.CountingInversions;
+package Sorteer.CountingInversions;
 
 public interface InversionCounter {
 

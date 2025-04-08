@@ -1,10 +1,10 @@
-package SorteerAlgoritmen.ShellSort;
+package Sorteer.ShellSort;
 
 public class ShellSorteerder implements Sorteerder{
 
-    private int[] incrementreeks;
+    private final int[] incrementreeks;
 
-    public ShellSorteerder(int incrementreeks[]) {
+    public ShellSorteerder(int[] incrementreeks) {
         this.incrementreeks = incrementreeks;
     }
 

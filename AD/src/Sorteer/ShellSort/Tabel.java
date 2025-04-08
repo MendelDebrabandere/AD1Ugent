@@ -1,11 +1,10 @@
-package SorteerAlgoritmen.ShellSort;
+package Sorteer.ShellSort;
 
-import java.io.PrintWriter;
 import java.util.Arrays;
 
 public class Tabel {
 
-    private int[] tabel;
+    private final int[] tabel;
 
     public Tabel(int[] tabel) {
         this.tabel = tabel;
@@ -28,17 +27,6 @@ public class Tabel {
     @Override
     public String toString() {
         return Arrays.toString(tabel);
-    }
-
-    public void print(PrintWriter out, int width) {
-        out.println("[ ");
-        for(int j = 0; j < size(); j++) {
-            out.print(String.format(" %3d,", get(j)));
-            if((j + 1) % width == 0) {
-                out.println();
-            }
-        }
-        out.println("]");
     }
 
     @Override

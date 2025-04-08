@@ -1,4 +1,4 @@
-package SorteerAlgoritmen.SortingDishes;
+package Sorteer.SortingDishes;
 
 public interface Evaluator {
 

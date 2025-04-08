@@ -1,4 +1,4 @@
-package SorteerAlgoritmen.ShellSort;
+package Sorteer.ShellSort;
 
 import org.junit.Assert;
 import org.junit.Test;

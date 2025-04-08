@@ -1,4 +1,4 @@
-package StapelsWachtlijnPrioriteitswachtlijnen.ParkingsSimuleren;
+package Stapels.ParkingsSimuleren;
 
 public class Event {
 

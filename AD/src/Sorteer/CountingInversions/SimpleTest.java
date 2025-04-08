@@ -1,4 +1,4 @@
-package SorteerAlgoritmen.CountingInversions;
+package Sorteer.CountingInversions;
 
 import org.junit.Assert;
 import org.junit.BeforeClass;

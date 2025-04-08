@@ -1,4 +1,4 @@
-package SorteerAlgoritmen.SortingDishes;
+package Sorteer.SortingDishes;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -82,7 +82,7 @@ public class SimpleTest {
     }
 
     private static class SimpleDish implements Dish {
-        private String name;
+        private final String name;
 
         public SimpleDish(String name) {
             this.name = name;
