@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="graphlib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/Grafen/graphlib.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
